@@ -1,0 +1,640 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Clarkson, Helvetica, sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: rgb(221, 205, 204);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+  border-radius: 60px;
+  opacity: .8;
+    gap: 10px;
+}
+.lowerBtn{
+    display: flex;
+}
+
+footer{
+    background-color: rgb(221, 205, 204);
+    height:160px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+main {
+    width: 100%;
+}
+#s1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#a1 {
+    display: inline-block;
+    font-size: 45px;
+    color: black;
+    padding: 20px;
+}
+#img1 {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+#avocado{
+    width: 150px;
+    height: 150px;
+}
+#ibum{
+    width: 150px;
+    height: 150px;
+}
+#zatoxin{
+    width: 150px;
+    height: 150px;
+}
+#table{
+    width: 350px;
+    height: auto;
+}
+.section-title {
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+.allCategory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.category {
+    width: 100%;
+    max-width: 310px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: solid 5px rgba(36, 97, 36, 0.725) ;
+}
+.category img {
+    width: 300px;
+    height: 300px;
+}
+.liCategory {
+    color: rgba(36, 97, 36, 0.725);
+    font-size: 22px;
+}
+#nameFood{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+#nameChemistry{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+#nameMedicine{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+#nameVitamins{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameZapal{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameNose{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameOmega{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameJoint{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameFeVitamins{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameChVitamins{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameCollagen{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameCosmetic{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+#nameCreamHead{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameClear{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameEyes{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#eye{
+    width: 100px;
+    height: auto;
+}
+#nameHair{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#nameTextile{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+#nameBilyzna{
+    color: snow;
+    background-color: rgba(36, 97, 36, 0.725);
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.aCategory{
+    font-size: 17px;
+    color: #000000;
+}
+.price{
+    color: #000000;
+    list-style-type: none;
+    font-size: 20px;
+}
+li{
+    color: #000000;
+    list-style-type: none; 
+}
+h2{
+    margin-left: 10px;
+}
+#pFooter{
+    font-size: 30px;
+    color: rgba(36, 97, 36, 0.725);
+    margin-bottom: 20px;
+}
+#dFooter{
+    display: flex;
+            justify-content: center;
+        
+}
+.tg{
+    width: 15px;
+}
+a{
+    text-decoration: none;
+}
+.line{
+    font-size: 50px;
+    color: black;
+}
+h3{
+    margin: auto;
+}
+
+#nameCart{
+    font-size: 27px;
+    color: rgba(36, 97, 36, 0.725) ;
+}
+.pCart{
+    font-size: 23px;
+    color: black;
+}
+.in1{
+	display: block;
+	margin-bottom: 20px;
+	height: 1cm;
+	font-size: 24px;
+	font-family: cursive;
+}
+.hiddenSection {
+    display: none;
+}
+.visibleSection {
+    display: block;
+    height: 50px;
+    background-color: rgb(221, 205, 204);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+  top: 0;
+  width: 95%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+  border-radius: 60px;
+  margin-top: 95px;
+}
+.button-35 {
+    align-items: center;
+    background-color: rgba(36, 97, 36, 0.725);
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 10px;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    margin-left: 25px;
+    
+}
+.button-35:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.button-48 {
+  appearance: none;
+  background-color: rgb(221, 205, 204);
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 50px;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  border-radius: 50px;
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    
+}
+.closeSection{
+    background-color: rgb(221, 205, 204);
+    border: none ;
+    font-size: 30px;
+}
+.closeSection:hover,
+.closeSection:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#closeModal{
+    background-color: snow;
+    border: none;
+    font-size: 30px;
+}
+#closeModal:focus,
+#closeModal:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте */
+    z-index: 1; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включает прокрутку, если нужно */
+    background-color: rgb(0,0,0); /* Черный фон с прозрачностью */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верхнего и нижнего края и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина */
+}
+
+
+
+@media (min-width: 600px) {
+    .category {
+        width: 45%;
+    }
+}
+@media (min-width: 900px) {
+    .category {
+        width: 30%;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        height: 80px;
+    }
+    .tg{
+        width: 10px;
+    }
+    #dFooter {
+        display: flex;
+        align-items: center;
+    }
+    .lowerBtn{
+        flex-direction: column;
+    }
+#pFooter{
+    font-size: 15px;
+}
+    .button-35 {
+        margin-bottom: 10px;
+    }
+    .button-48{
+        width: 50px;
+        font-size: 9px;
+        height: 20px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: relative;
+  display: flex;
+  margin: 5px;
+    }
+    .line{
+        font-size: 20px;
+    }
+    header{
+        height: 20px;
+        padding: 20px;
+        width: 92%;
+    }
+    .visibleSection{
+        height: 10px;
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+        margin-top: 65px;
+    }
+    .close{
+        font-size: 15px;
+    }
+    .in1{
+        font-size: 15px;
+    }
+}

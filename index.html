@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" type="text/css" href="sale.css">
+    <link rel ="icon" href="img/logo.jpeg">
+    <script src="sale.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+    emailjs.init("1n1jORkEVp_AKoqWW");
+   })()
+</script>
+
+</head>
+<body>
+    </div>
+    
+    <header> 
+            <div class="lowerBtn"><button class="button-48" id="openModalBtn"><span class="text">🛒Кошик🛒</span></button>
+            <a href="#start"><button class="button-48" role="button"><span class="text">▲Повернутись▲</span></button></a></div>
+            <p class="line">|</p>
+            <a href="#nameFood"><button class="button-48" role="button"><span class="text">Їжа</span></button></a>
+            <a href="#nameChemistry"><button class="button-48" role="button"><span class="text">Хімія</span></button></a>
+            <button class="button-48" onclick="toggleSection('section1')"><span class="text">Ліки</span></button>
+            <div class="hiddenSection" id="section1">
+                
+                <a href="#nameVitamins"><button class="button-48" role="button"><span class="text">Вітаміни</span></button></a>
+                <a href="#nameFeVitamins"><button class="button-48" role="button"><span class="text">Вітаміни для жінок</span></button></a>
+                <a href="#nameChVitamins"><button class="button-48" role="button"><span class="text">Вітаміни для дітей</span></button></a>
+                <a href="#nameZapal"><button class="button-48" role="button"><span class="text">Жарознижувальні</span></button></a>
+                <a href="#nameNose"><button class="button-48" role="button"><span class="text">Для носу</span></button></a>
+                <a href="#nameOmega"><button class="button-48" role="button"><span class="text">Омега</span></button></a>
+                <a href="#nameJoint"><button class="button-48" role="button"><span class="text">Для суглобів</span></button></a>
+                <a href="#nameCollagen"><button class="button-48" role="button"><span class="text">Коллаген</span></button></a>
+                <button class="closeSection" onclick="closeSection('section1')">×</button>
+        </div>
+            <button class="button-48"  onclick="toggleSection('section2')"><span class="text">Косметика</span></button>
+            <div class="hiddenSection" id="section2">
+                <a href="#nameCreamHead"><button class="button-48" role="button"><span class="text">Для обличчя</span></button></a>
+                <a href="#nameClear"><button class="button-48" role="button"><span class="text">Очищення та тонізовання</span></button></a>
+                <a href="#nameEyes"><button class="button-48" role="button"><span class="text">Для очей</span></button></a>
+                <a href="#nameHair"><button class="button-48" role="button"><span class="text">Для волосся</span></button></a> 
+                <button class="closeSection" onclick="closeSection('section2')">×</button>
+            </div>
+            <button class="button-48" onclick="toggleSection('section3')"><span class="text">Текстиль</span></button>
+            <div class="hiddenSection" id="section3">
+                 <a href="#nameBilyzna"><button class="button-48" role="button"><span class="text">Білизна</span></button></a>
+                 <button class="closeSection" onclick="closeSection('section3')">×</button>
+            </div>   
+    </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal">×</button>
+            <h2>Будь-ласка, заповніть цю форму</h2>
+            <form name="f1">
+            <input type="surname" name="t1" size="26" maxlength="30" id="surname" placeholder="Ваше прізвище" class="in1" >
+            <li><input type="name" name="t1" size="26" maxlength="30" id="name"  placeholder="Ваше ім'я" class="in1" ></li>
+            <li><input type="email" name="t1" size="26" maxlength="30" id="email"  placeholder="Ваша електронна пошта" class="in1" ></li>
+            <li><input type="text" name="t1" size="26" maxlength="30" id="text"  placeholder="Ваше ім'я користувача у Telegram" class="in1"></li>
+            <h2>🛒Кошик🛒</h2>
+            <div id="cart"></div>
+            <button class="button-35" onclick="sendMail()">Відправити</button>
+        </form>
+        </div>
+        
+    </div>
+
+    <main>
+    <section id="s1">
+        <article id="a1">
+            <li id="start">ㅤ</li>
+            <li>ㅤ</li>
+           
+            Натисни на малюнок нижче
+        </article>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/logo.jpeg" id="img1">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        
+                        <li>Вітаємо у захопливому світі нашого сайту! </li>
+<li>ㅤ</li>
+<li>Ми впевнені, для краси не варто створювати кордони, а тому забезпечуємо доступ до нескінченної різноманітності косметичних продуктів і сервісів для всіх б’юті-адептів.</li>
+<li>ㅤ</li>
+<li>Наша мета — дати вам можливість знайти у світі краси все, що забажаєте, і навіть більше.</li>
+                        
+        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div id="nameFood">
+            <h2>
+                Їжа
+            </h2>
+        </div>
+    <div class="allCategory">
+       <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/ghi.jpg">
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            Високої якості по класній ціні. Український виробник.
+           <li>Сертифікати якості надіслали✔️. Неймовірно смачне та ароматне.</li>
+           <li>А головне - безпечне для смаження, додавання у каші дорослим і діткам, також смачно просто на хлібчик.</li>
+            </p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>МАСЛО ГХІ
+               </strong></li></h2> <li class="price">🔥200 мл - 254 грн</li><button onclick="addToCart({name: 'Масло Гхі 200мл', price: '254'})" class="button-35" role="button">Додати у кошик</button>
+            <li class="price">🔥500 мл - 498 грн</li><button class="button-35" role="button" onclick="addToCart({name: 'Масло Гхі 500мл', price: '498'})">Додати у кошик</button>
+            <li class="price">🔥1000 мл - 834 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Масло Гхі 1л', price: '834'})">Додати у кошик</button>
+            </div>
+
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/avocado1.jpeg">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="pCategory">
+                                <li><img src="img/avocado.jpg" id="avocado"></li>
+                                Смачнющий сорт Hass 
+                                700+ грам сіточки.
+                                Врахуйте також, що було кілька випадків, що дівчатам траплялися переспівші, обміняти я не зможу, звісно.
+Але як правило всі авокадики неймовірно смачні 🥰
+                </p>
+                        </div>
+                    </div>
+                </div>
+                <h2><li class="liCategory"; class="aCategory"><strong>АВОКАДО Hass</strong></li></h2>
+                <li class="price">🔥210 грн</li>
+    <button class="button-35" role="button"onclick="addToCart({name: 'Авокадо Хасс', price: '210'})">Додати у кошик</button>
+                </div>
+        </div>
+    <div id="nameChemistry">
+        <h2>
+            Хімія
+        </h2>
+    </div>
+    <div class="allCategory">
+        <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/capsule.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            ❗️ Легендарні Універсальні КАПСУЛИ для прання поштучно
+                            <li>Якість топ 🔝</li>
+                            <li>Угорщина 🇭🇺</li>
+                            <li>Професійні, для оптового споживання на внутрішньому ринку (готелі, ресторани, фабрики тощо)</li>
+           
+        <li>*бронюю від 20 шт.</li></p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>КАПСУЛИ ДЛЯ ПРАННЯ</strong></li></h2> 
+            <li class="price">🔥 9,80 грн/ 1 шт.</li>
+<button class="button-35" role="button"onclick="addToCart({name: 'Капсули для прання поштучно', price: '9.8'})">Додати у кошик</button>
+                </div>
+    </div>
+    <div id="nameMedicine">
+        <h2>
+            Ліки
+        </h2>
+    </div>
+        <div class="allCategory">
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/test.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="pCategory">
+                                <li>ㅤ</li>
+                                ТЕСТ 4-в-1 на COVID-19, грип типів А та В, RSV вірус
+                <li>Для використання в домашніх умовах
+                    Ціни в наших аптеках на подібні тести просто зашкалюють, а це дуже необхідна річ в аптечці зараз !!!
+                    Від 2 років життя.</li>
+                <li>Медичний пристрій у формі діагностичного тесту, який проводиться в домашніх умовах для виявлення наявності антигенів вірусу Covid-19, вірусу грипу А/В. та вірус RSV</li></p>
+                        </div>
+                    </div>
+                </div>
+                <h2><li class="liCategory"; class="aCategory"><strong></strong></li></h2><li class ="price">🔥 142 грн</li>
+        <button class="button-35" role="button" onclick="addToCart({name:'Тест на хвороби', price:'142'})">Додати у кошик</button>
+        </div>
+        <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/brodacid.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+            ❗️Бродацид — препарат, призначений для видалення звичайних бородавок, навколонігтьових бородавок, мозаїчних бородавок і бородавок на стопі.
+            <li>Застосування BRODACID
+            Рідина призначена для зовнішнього застосування.
+            Змащуйте рідиною (за допомогою аплікатора) чисту і суху поверхню соска бородавки двічі на день.</li>
+            <li>Рідина не повинна потрапляти на здорову шкіру.
+            Після нанесення дочекайтеся, поки рідина висохне в білу плівку.
+            Тривалість лікування, залежно від ефекту, коливається від кількох днів до 6-8 тижнів.</li></p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>БРОДАЦИД</strong></li></h2><li class ="price">🔥 282 грн</li>
+    <button class="button-35" role="button" onclick="addToCart({name:'Бродацид', price:'282'})">Додати у кошик</button>
+    </div>
+        </div>
+    
+    <div id="nameVitamins">
+            <h3>
+                Вітаміни
+            </h3>
+        </div>
+    <div class="allCategory">
+        <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/ostrovit.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            Гарний вітамінно-мінеральний комплекс від OstroVit
+<li>90 таб.</li>
+<li>По 1 таб. на день після їжі</li>
+            </p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>ВІТАМІННИЙ КОМПЛЕКС OstroVit</strong></li></h2>
+            <li class="price">🔥 204 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Вітамінний комплекс OstroVit', price: '204'})">Додати у кошик</button>
+                </div>
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/vitamin.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p id="pCategory">
+                                    <li>ㅤ</li>
+                    Якісний вітамін D3 - ось він.
+                    Дуже зручна крапельна форма, для діток та дорослих.
+                    1 крапля = 500IU
+                    <li>Приймати бажано після їжі
+                        Діткам дозування повинен призначити лікар!
+                        Профілактичне дозування для дітей 500-2000 м.о. в залежності від віку - НЕ БІЛЬШЕ. Все, що більше - тільки через лікаря!!!
+                        </li>
+                    <li>❗️А для дорослих НАГАДУЮ, що профілактичне та абсолютно безпечне дозування саме для дорослих - 2000-4000 м.о. на добу (це 4-8 крапель)</li></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2><li class="liCategory"; class="aCategory"><strong>ВІТАМІН D3</strong></li></h2><li class ="price">🔥248 грн</li>
+            <button class="button-35" role="button" onclick="addToCart({name:'Вітамін D3', price:'248'})">Додати у кошик</button>
+            </div>
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/vitamin1.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="pCategory">
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                                Вітаміни для підтримки ЗДОРОВИХ І МІЦНИХ КІСТОК
+
+                                D3 4000 м.о. + К2 у формі МК-7
+                                
+                                Вітаміни D та К, отримані з натуральної сировини.
+                <li>Вітамін К2 у даному випадку представлений у формі MK-7, яка найлегше і найкраще засвоюється нашим організмом!</li>
+                <li>90 таб.
+                По 1 таб. на день</li></p>
+                        </div>
+                    </div>
+                </div>
+                <h2><li class="liCategory"; class="aCategory"><strong>ВІТАМІНИ ДЛЯ КІСТОК OstroVit</strong></li></h2><li class ="price">🔥 355 грн</li>
+        <button class="button-35" role="button" onclick="addToCart({name:' Вітаміни для підтримки ЗДОРОВИХ І МІЦНИХ КІСТОК OstroVit', price:'355'})">Додати у кошик</button>
+        </div>
+            </div>
+            <div class="allCategory">
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/vitamin2.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p id="pCategory">
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                    ❗️СПІРУЛІНА 
+                    <li>👉 1000 шт</li>
+                    <li>Багата на мікроелементи, антиоксиданти, містить вітаміни групи В, прискорює обіг речовин, покращує травлення.
+                    ❗️Курс на 250 днів 😁</li></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2><li class="liCategory"; class="aCategory"><strong>СПІРУЛІНА OstroVit</strong></li></h2><li class ="price">🔥 288 грн</li>
+            <button class="button-35" role="button" onclick="addToCart({name:'Спіруліна OstroVit', price:'288'})">Додати у кошик</button>
+            </div>
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/vitamin3.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="pCategory">
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                                <li>ㅤ</li>
+                ❗️МЕЛАТОНІН 1г
+                <li>👉 180 таб!!!</li>
+                <li>При проблемах із засинанням та сном
+                При ненормованому графіку роботи та нічних змінах</li></p>
+                        </div>
+                    </div>
+                </div>
+                <h2><li class="liCategory"; class="aCategory"><strong>МЕЛАТОНІН OstroVit</strong></li></h2><li class ="price">🔥 198 грн</li>
+        <button class="button-35" role="button" onclick="addToCart({name:'Мелатонін OstroVit', price:'198'})">Додати у кошик</button>
+        </div>
+        <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/vitamin4.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+            ❗️СЕЛЕН від OstroVit
+            <li>100 мг</li>
+            <li>👉 цілих 220 таб.</li></p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>СЕЛЕН OstroVit</strong></li></h2><li class ="price">🔥 198 грн</li>
+    <button class="button-35" role="button" onclick="addToCart({name:'СЕЛЕН OstroVit', price:'198'})">Додати у кошик</button>
+    </div>
+            </div>
+            <div id="nameFeVitamins">
+                <h3> Вітаміни для жінок</h3>
+            </div>
+            <div class="allCategory">
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/vitaminFe.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p id="pCategory">
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    Вітаміни для волосся з новою формулою, має дуже класні відгуки
+                    <li>Цікавий склад 👍</li>
+                    <li>60 капс., курс на 2 місяці без перерви</li></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2><li class="liCategory"; class="aCategory"><strong>VITAPIL</strong></li></h2><li class ="price">🔥540 грн</li>
+            <button class="button-35" role="button" onclick="addToCart({name:'VITAPIL', price:'540'})">Додати у кошик</button>
+            </div>
+            </div>
+            <div id="nameChVitamins">
+                <h3>
+                    Вітаміни для дітей
+                </h3>
+            </div>
+            <div class="allCategory">
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/vitaminCh.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p id="pCategory">
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    ❗️МАГНЕ В6 для діточок від 3 років 120 мл
+                    <li>Смак малини</li>
+                    <li>Діти від 3 років 2 ч.л. 1 раз на день
+                    Підлітки 1 ст.ложка 1 раз на день</li></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2><li class="liCategory"; class="aCategory"><strong>МАГНЕ В6 ДЛЯ ДІТЕЙ</strong></li></h2><li class ="price">🔥 360 грн</li>
+            <button class="button-35" role="button" onclick="addToCart({name:'Магне В6', price:'360'})">Додати у кошик</button>
+            </div>
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/vitaminCh1.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="pCategory">
+                                <li>ㅤ</li>
+                                ❗️Желейки з БУЗИНОЮ Sumbucus тепер із додаванням вітаміну Д3
+                <li>❗️Вітаміни для дітей від 3 років з екстрактом бузини, цинком, віт.С та віт.Д3 👉 64 шт</li>
+                <li>Малиновий смак</li>
+            <li>СКЛАД:
+                Екстаркт бузини 50 мг (100 мг в 2 таб.)
+                Вітамін С 16мг (32 мг в 2 таб.)
+                Вітамін Д 500 мг (1000 мг в 2 таб.)
+                Цинк 2 мг (4 мг в 2 таб.)</li></p>
+                        </div>
+                    </div>
+                </div>
+                <h2><li class="liCategory"; class="aCategory"><strong>ЖЕЛЕЙКИ ДЛЯ ДІТЕЙ Sambucus</strong></li></h2><li class ="price">🔥 290 грн</li>
+        <button class="button-35" role="button" onclick="addToCart({name:'Желейки з БУЗИНОЮ Sumbucus', price:'290'})">Додати у кошик</button>
+        </div>
+            </div>
+            <div id="nameZapal">
+                <h3>
+                    Жарознижувальні
+                </h3>
+            </div>
+                <div class="allCategory">
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/dihmax.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p id="pCategory">
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    <li>ㅤ</li>
+                                    ✔️Для лікування симптомів хронічної недостатності венозного та лімфообігу
+                                    ✔️при відчутті тяжкості та болю в ногах
+                                    ✔️при нічних судомах ніг
+                                    <li>✔️а також для симптоматичного лікування загострення геморою</li>
+                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2><li class="liCategory"; class="aCategory"><strong>ДІОСМІН</strong></li></h2>
+                    <li class="price">🔥 306 грн</li>
+        <button class="button-35" role="button"onclick="addToCart({name: 'Діосмін', price: '306'})">Додати у кошик</button>
+                        </div>
+                        <div class="category">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="img/ibum1.jfif">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p id="pCategory">
+                                            <li><img src="img/ibum.jpg" id="ibum"></li>
+                                            👉36 капсул.
+                                            Капсули з рідким вмістом, завдяки цьому починають діяти дуже швидко!!!
+                                            
+                                            <li>Діюча речовина - ібупрофен 400 мг</li> 
+                                            <li>Якість та швидкість дії перевірена особисто 👌</li>
+                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2><li class="liCategory"; class="aCategory"><strong>IBUM Express Forte</strong></li></h2>
+                            <li class="price">🔥 311 грн</li>
+                <button class="button-35" role="button"onclick="addToCart({name: 'Ibum Express Forte', price: '311'})">Додати у кошик</button>
+                                                    </div>
+                                                    <div class="category">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img/febrisan.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p id="pCategory">
+                                        <li>ㅤ</li>
+                                        <li>ㅤ</li>
+                                        <li>ㅤ</li>
+                        ❗️ФЕБРІСАН, 16 пакетиків
+                        <li>Гарячий розчин</li>
+                        <li>Засіб від симптомів застуди та грипу зі смаком лимона.</li>
+                    <li>УВАГА! Містить 750 мг парацетамолу (жарознижуючий та знеболюючий засіб )</li></p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2><li class="liCategory"; class="aCategory"><strong>ФЕБРІСАН</strong></li></h2><li class ="price">🔥 382 грн</li>
+                <button class="button-35" role="button" onclick="addToCart({name:'ФЕБРІСАН, 16 пакетиків', price:'382'})">Додати у кошик</button>
+                </div>
+                    </div>
+
+                    <div id="nameNose">
+                        <h3>
+                            Для носу
+                        </h3>
+                    </div>    
+<div class="allCategory">
+             <div class="category">
+                 <div class="flip-card">
+                    <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                     <img src="img/rinsezatoxin.jpg">
+                     </div>
+                    <div class="flip-card-back">
+                     <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        12 саше для приготування розчину у подарунок.ТАКОЖ при хворобі та при нежитю, закладеності носа промивання пазух - це перший крок к одужанню. Це вже перевірено багато разів. 
+                        Тільки ті, хто промивали ніс спеціальною системою, знають, скільки гидоти вимивається з носа 🤦‍♀️
+                        
+                        ЦЯ система дуже зручна, одна з найкращих, яка мені траплялася!
+                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2><li class="liCategory"; class="aCategory"><strong>СИСТЕМА ДЛЯ ПРОМИВАННЯ НОСОВИХ ПАЗУХ</strong></li></h2>
+                             <li class="price">🔥411 грн</li>
+                <button class="button-35" role="button" onclick="addToCart({name: 'Система для промивання носових пазух', price: '411'})">Додати у кошик</button>
+                                </div>
+                                        <div class="category">
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front">
+                                                        <img src="img/zatoxin1.jpg">
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <p id="pCategory">
+                                                           <li><img src="img/zatoxin.jpg" id="zatoxin"></li>
+                                                            Сашетки для системи промивання носа.
+                                                            <li>В упаковці 30 шт.</li>
+                                                            <li>Є 6 уп.</li>
+                                            </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h2><li class="liCategory"; class="aCategory"><strong>САШЕТКИ ZATOXIN RINSE</strong></li></h2>
+                                            <li class="price">🔥 210 грн</li>
+                                <button class="button-35" role="button"onclick="addToCart({name: 'Сашетки Zatoxin Rinse', price: '210'})">Додати у кошик</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="nameOmega">
+                                                                        <h3>
+                                                                            Омега
+                                                                        </h3>
+                                                                    </div> 
+                                                                    <div class="allCategory">
+                                                                    <div class="category">
+                                                                    <div class="flip-card">
+                                                                        <div class="flip-card-inner">
+                                                                            <div class="flip-card-front">
+                                                                                <img src="img/omega369.jpg">
+                                                                            </div>
+                                                                            <div class="flip-card-back">
+                                                                                <p id="pCategory">
+                                                                                    <li>ㅤ</li>
+                                                                                    <li>ㅤ</li>
+                                                                                    <li>ㅤ</li>
+                                                                                    <li>ㅤ</li>
+                                                                                    <li>ㅤ</li>
+                                                                                    👉 180 капс.
+                                                                            Приймати по 1 капс. на день
+                                                                    </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h2><li class="liCategory"; class="aCategory"><strong>ОМЕГА 3-6-9 ВІД OstroVit</strong></li></h2>
+                                                                    <li class="price">🔥 498 грн</li>
+                                                        <button class="button-35" role="button" onclick="addToCart({name: 'Омега 3-6-9 від OstroVit', price: '498'})">Додати у кошик</button>
+                                                    </div>
+                                                    <div class="category">
+                                                        <div class="flip-card">
+                                                            <div class="flip-card-inner">
+                                                                <div class="flip-card-front">
+                                                                    <img src="img/omega-3.jpg">
+                                                                </div>
+                                                                <div class="flip-card-back">
+                                                                    <p id="pCategory">
+                                                                        <li>ㅤ</li>
+                                                                        <li>ㅤ</li>
+                                                                        <li>ㅤ</li>
+                                                                        ❗️Омега-3 GOLD від Mollers для дорослих в сиропі
+                                                        <li>250 мл
+                                                            Норвегія</li>
+                                                        <li>У складі вітамін Д у дозуванні 2000 м.о.
+                                                            Також дуже гарний варіант.
+                                                            Приймати по 1 ч.л. під час або одразу після їжі</li></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2><li class="liCategory"; class="aCategory"><strong>ОМЕГА-3</strong></li></h2><li class ="price">🔥487 грн</li>
+                                                <button class="button-35" role="button" onclick="addToCart({name:'Омега-3', price:'487'})">Додати у кошик</button>
+                                                </div>
+</div>
+<div id="nameJoint">
+    <h3>
+        Для суглобів
+    </h3>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/joint.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        ❗️StructuActiv 500 мг, 60 капс.
+                        Гарний перевірений препарат для суглобів 
+        <li>Діюча речовина - Хондроїтину сульфат натрію у високому дозуванні
+            По 2 капс. на день</li>
+        <li>Показання: підтримує здоров'я кісток та хрящів. Надає кісткам міцності, а хрящу механічні та еластичні властивості</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>StructuActiv</strong></li></h2><li class ="price">🔥243 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'StructuActiv 500 мг, 60 капс.', price:'243'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/joint1.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Пiаскледин, 30 капс.
+    <li>Гарний препарат, рекомендований для систематичного лікування остеоартрозу та супутнього болю.</li>
+    <li>Склад :
+        1 капсула:  
+        олія авокадо неомильна фракція - 100 мг,  
+        соєва олія неомильна фракція - 200 мг
+        *Курс на місяць</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ПІАСКЛЕДИН</strong></li></h2><li class ="price">🔥781 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Пiаскледин, 30 капс.', price:'781'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/joint2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Вітаміни з глюкозаміном та хондроітином для суглобів
+    <li>60 капс.
+        По 1-2 капс. на день</li>
+    <li>✅Глюкозамін
+        ✅Хондроїтин
+        ✅Гідралізований колаген
+        ✅Віт.С
+        ✅Екстракт імбирю
+        ✅Вітамін Д3</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>SALDIFLEX</strong></li></h2><li class ="price">🔥 359 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'SALDIFLEX', price:'359'})">Додати у кошик</button>
+</div>
+</div>
+<div id="nameCollagen">
+    <h3>
+        Коллаген
+    </h3>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/collagen.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+        ❗️КОЛАГЕН без добавок, натуральний!
+        <li>У складі ЧИСТИЙ яловичий колаген та 500 мг вітаміну С
+            Вітамін С обов'язково повинен бути у складі або прийматися додатково з колагеном, бо без нього придбання колагену - це гроші на вітер, він не засвоюється без віт.С</li>
+        <li>1 банка = 40 днів прийому (40 порцій)
+        Мірна ложка всередині.
+        Приймати по 2 мірні ложки з ранку натщесерце, розмішавши з водою або максимум соком (краще всеж з чистою водою) і після прийому не їмо 40 хв., а краще 1 годину</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>КОЛЛАГЕН</strong></li></h2><li class ="price">🔥 592 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'КОЛЛАГЕН', price:'592'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/collagen1.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️КОЛАГЕН зі смаком АНАНАС! 🍍
+    <li>У складі ЧИСТИЙ яловичий колаген та 500 мг вітаміну С
+    Вітамін С обов'язково повинен бути у складі або прийматися додатково з колагеном, бо без нього придбання колагену - це гроші на вітер, він не засвоюється без віт.С</li>
+    <li>1 банка = 40 днів прийому (40 порцій)
+    Мірна ложка всередині.
+    Приймати по 2 мірні ложки з ранку натщесерце, розмішавши з водою або максимум соком (краще всеж з чистою водою) і після прийому не їмо 40 хв., а краще 1 годину</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КОЛЛАГЕН АНАНАС</strong></li></h2><li class ="price">🔥 592 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'КОЛЛАГЕН АНАНАС', price:'592'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/collagen2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️КОЛАГЕН зі смаком МАЛИНА-М'ЯТА! 🍓🌱
+    <li>У складі ЧИСТИЙ яловичий колаген та 500 мг вітаміну С
+    Вітамін С обов'язково повинен бути у складі або прийматися додатково з колагеном, бо без нього придбання колагену - це гроші на вітер, він не засвоюється без віт.С</li>
+    <li>1 банка = 40 днів прийому (40 порцій)
+    Мірна ложка всередині.
+    Приймати по 2 мірні ложки з ранку натщесерце, розмішавши з водою або максимум соком (краще всеж з чистою водою) і після прийому не їмо 40 хв., а краще 1 годину</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КОЛЛАГЕН МАЛИНА-М'ЯТА</strong></li></h2><li class ="price">🔥 592 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'КОЛЛАГЕН МАЛИНА-М`ЯТА', price:'592'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/collagen3.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+        ❗️КОЛАГЕН зі смаком ПЕРСИК! 🍑
+        <li>У складі ЧИСТИЙ яловичий колаген та 500 мг вітаміну С
+        Вітамін С обов'язково повинен бути у складі або прийматися додатково з колагеном, бо без нього придбання колагену - це гроші на вітер, він не засвоюється без віт.С</li>
+        <li>1 банка = 40 днів прийому (40 порцій)
+        Мірна ложка всередині.
+        Приймати по 2 мірні ложки з ранку натщесерце, розмішавши з водою або максимум соком (краще всеж з чистою водою) і після прийому не їмо 40 хв., а краще 1 годину</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>КОЛЛАГЕН ПЕРСИК</strong></li></h2><li class ="price">🔥 592 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'КОЛЛАГЕН ПЕРСИК', price:'592'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/collagen4.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️КОЛАГЕН зі смаком ЧОРНА СМОРОДИНА! 🍇
+    <li>У складі ЧИСТИЙ яловичий колаген та 500 мг вітаміну С
+    Вітамін С обов'язково повинен бути у складі або прийматися додатково з колагеном, бо без нього придбання колагену - це гроші на вітер, він не засвоюється без віт.С</li>
+    <li>1 банка = 40 днів прийому (40 порцій)
+    Мірна ложка всередині.
+    Приймати по 2 мірні ложки з ранку натщесерце, розмішавши з водою або максимум соком (краще всеж з чистою водою) і після прийому не їмо 40 хв., а краще 1 годину</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КОЛЛАГЕН ЧОРНА СМОРОДИНА</strong></li></h2><li class ="price">🔥 592 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'КОЛЛАГЕН ЧОРНА СМОРОДИНА', price:'592'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/collagen5.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️КОЛАГЕН зі смаком РОМ з КОЛОЮ! 🥃
+    <li>У складі ЧИСТИЙ яловичий колаген та 500 мг вітаміну С
+    Вітамін С обов'язково повинен бути у складі або прийматися додатково з колагеном, бо без нього придбання колагену - це гроші на вітер, він не засвоюється без віт.С</li>
+    <li>1 банка = 40 днів прийому (40 порцій)
+    Мірна ложка всередині.
+    Приймати по 2 мірні ложки з ранку натщесерце, розмішавши з водою або максимум соком (краще всеж з чистою водою) і після прийому не їмо 40 хв., а краще 1 годину
+    </li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КОЛЛАГЕН РОМ КОЛА</strong></li></h2><li class ="price">🔥 592 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'', price:'592'})">Додати у кошик</button>
+</div>
+</div>
+<div id="nameCosmetic">
+    <h2>
+        Косметика
+    </h2>
+</div>
+<div id="nameCreamHead">
+    <h3>
+        Крем для обличчя
+    </h3>
+</div>
+<div class="allCategory">
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/cream.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Гарна ціна на зволожуючий крем 😍
+                    <li>Будь-яка шкіра, у тому числі чутлива </li>
+                    <li>50 мл</li>
+    
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ЗВОЛОЖУЮЧИЙ КРЕМ tolpa.</strong></li></h2>
+    <li class="price">🔥235 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Зволожуючий крем tolpa.', price: '235'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/cream1.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    Відновлення+живлення, більше масел у складі
+                    <li>⚡️Шкіра: чутлива, схильна до алергії, суха і дуже суха, що потребує регенерації.</li>
+                    <li>40 мл</li>
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>НІЧНИЙ КРЕМ tolpa.</strong></li></h2>
+    <li class="price">🔥 387 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Нічний крем tolpa.', price: '387'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/cream2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Універсальний крем для обличчя, тіла, рук.
+                    <li>Великий об'єм - 250 мл</li>
+                    <li>З маслами Ші та мигдалю</li>
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>УНІВЕРСАЛЬНИЙ КРЕМ tolpa.</strong></li></h2>
+    <li class="price">🔥 264 грн 🔥</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Універсальний крем tolpa.', price: '264'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cream3.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        Наш незмінний ТОП 🔝
+
+                        ❗️Легкий матуючий ВВ-крем з SPF-30 захистом та максимальним зволоженням.
+                        Ідеальний варіант на осінь
+                       <li>👉 Маскує почервоніння, розширені капіляри та зміни кольору.</li> 
+                       <li>👉 Захищає від сонця та втрати рідини</li>
+                       <li>40 мл</li>
+       </p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>BB КРЕМ tolpa.</strong></li></h2>
+         <li class="price">🔥 398 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'ВВ крем tolpa.', price: '398'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/cream4.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Супернасичений крем для інтенсивного зволоження
+                    <li>- усуває лущення</li>
+                    <li>- зміцнює і захищає гідроліпідний бар'єр</li>
+                    40 мл
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>СУПЕРНАСИЧЕНИЙ КРЕМ tolpa.</strong></li></h2>
+    <li class="price">🔥322 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Супернасичений крем tolpa.', price: '322'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/cream5.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Гарний бюджетний кремчик-гель для комбінованої та жирної шкіри
+                   <li>Очищує пори, матує</li> 
+                   <li>З екстрактом масла лимона</li> 
+                   <li>50 мл</li> 
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КРЕМ-ГЕЛЬ tolpa.</strong></li></h2>
+    <li class="price">🔥288 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Крем-гель tolpa.', price: '288'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cream6.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        ❗️Гарний варіант бюджетного кремчику ДЛЯ СУХОЇ, зневодненої, чутливої шкіри
+        
+        <li>З екстрактом бавовника</li>
+        <li>50 мл</li>
+        </p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>КРЕМ ДЛЯ СУХОЇ ШКІРИ tolpa.</strong></li></h2>
+        <li class="price">🔥254 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Крем для сухої шкіри tolpa.', price: '254'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/cream7.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Крем СІСА для обличчя нічний
+    <li>Кислоти у складі: саліцилова, каприлова, а також цинк, екстракт мирри</li>
+    <li>40 мл</li>
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КРЕМ СІСА tolpa.</strong></li></h2><li class="price">🔥365 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Крем СІСА tolpa.', price: '365'})">Додати у кошик</button>
+</div>
+</div>
+<div id="nameClear">
+    <h3>
+        Очищення та тонізовання
+    </h3>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/clear.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        ❗️Міцелярна рідина для вмивання обличчя, очей і губ           
+        <li>200 мл</li>
+        <li>✔️очищає і зволожує</li>
+        <li>✔️видаляє забруднення та макіяж</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>МІЦЕЛЯРНА РІДИНА tolpa.</strong></li></h2><li class="price">🔥286 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Міцелярна рідина для вмивання обличчя, очей, губ tolpa.', price:'286'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear1.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+    
+    <li>❗️Для нормальної, комбінованої, схильної до висипів шкіри.</li>
+    <li>Має гарний склад 👍</li>
+<li>У поєднанні з тоніком працює ще краще</li>
+<li>195 мл</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ГЕЛЬ ДЛЯ ВМИВАННЯ ОБЛИЧЧЯ tolpa.</strong></li></h2><li class ="price">🔥 283 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Гель нормалізуючий для вмивання обличчя', price:'283'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    ❗️Гель-тонік для обличчя з матующим ефектом
+    <li>200 мл</li>
+    <li>Нормалізація мікробіому, тонізація, пригнічування росту бактерій, запобігання закупорці пор.</li>
+    <li>👉шкіра: змішана, жирна, чутлива, схильна до висипань</li>
+    <li>Наносити просто рукою на обличчя після ранкового та (або) вечірнього вмивання. Не змивати!</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ГЕЛЬ-ТОНІК tolpa.</strong></li></h2><li class ="price">🔥298 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Гель-тонік для обличчя з матующим ефектом', price:'298'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/clear3.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+        ❗️Гель для вмивання ДЛЯ ЧОЛОВІКІВ
+        <li>195 мл</li>
+        <li>З екстрактом чайного дерева</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>ГЕЛЬ ДЛЯ ЧОЛОВІКІВ</strong></li></h2><li class ="price">🔥 217 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Гель для вмивання ДЛЯ ЧОЛОВІКІВ', price:'217'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear4.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ‼️ Шипучий гель-пілінг для вмивання
+    <li>Професійна лінійка</li>
+    <li>195 мл</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ГЕЛЬ-ПІЛІНГ tolpa.</strong></li></h2><li class ="price">🔥 296 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Шипучий гель-пілінг для вмивання', price:'296'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear5.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+    ❗️Ніжний ензимний пілінг з АЗЕЛАЇНОВОЮ кислотою 👍
+    <li>40 мл</li>
+    <li>шкіра: чутлива, зморшки, зміни кольору, недоліки</li>
+    ✔️відлущувальні ферменти: папаїн і бромелайн
+    <li>✔️містить торф товстолобика , азелаїнову кислоту та гіалуронову кислоту.</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ЕНЗИМНИЙ ПІЛІНГ tolpa.</strong></li></h2><li class ="price">🔥334 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Ніжний ензимний пілінг з АЗЕЛАЇНОВОЮ кислотою', price:'334'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/clear6.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+        ❗️Вугільна відлущувальна паста-гель для вмивання обличчя.
+        <li>Глибоко очищає шкіру і пори</li>
+        <li>125 мл</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>ВУГІЛЬНИЙ ГЕЛЬ tolpa.</strong></li></h2><li class ="price">🔥 232 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Вугільна відлущувальна паста-гель для вмивання обличчя', price:'232'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear7.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    
+                    ❗️Умивалочка для ДУЖЕ СУХОЇ шкіри обличчя
+    <li>шкіра: чутлива, схильна до алергії, суха і дуже суха, що потребує регенерації.</li>
+    <li>195 мл</li>
+    <li>✔️ніжно очищає </li>
+    <li>✔️не порушує захисний бар'єр </li>
+    <li>✔️зменшує роздратування </li>
+    <li>✔️не сушить</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>УМИВАЛОЧКА ДЛЯ СУХОЇ ШКІРИ tolpa.</strong></li></h2><li class ="price">🔥392 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Умивалочка для ДУЖЕ СУХОЇ шкіри обличчя', price:'392'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear8.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️Пілінг-гель (скраб) для вмивання
+    <li>150 мл</li>
+    <li>Обожнюю його. Використовую декілька разів на тиждень.
+    Частички досить крупні, класно очищує
+    Дуже рекомендую 👍</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>СКРАБ tolpa.</strong></li></h2><li class ="price">🔥 198 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Пілінг-гель скраб для вмивання', price:'198'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/clear9.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+        ❗️Міцелярний ніжний гель для вмивання.
+        <li>Всі типи шкіри, у т.ч. чутлива</li>
+        <li>150 мл</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>МІЦЕЛЯРНИЙ ГЕЛЬ tolpa.</strong></li></h2><li class ="price">🔥198 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Міцелярний ніжний гель для вмивання.', price:'198'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear11.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️Мікропілінговий тонік-есенція для обличчя
+    <li>Використовувати як тонізацію після кожного вмивання і перед нанесенням крему/сироватки</li>
+    <li>200 мл</li>
+<li>Містить 3 ферменти : папаїн з папайї, бромелайн з ананаса, кератолін - фермент субтилізин, отриманий у процесі ферментації.</li>
+<li>⚡️шкіра: чутлива, схильна до алергії, комбінована, жирна та схильна до вугрів</li>
+</p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>МІКРОПІЛІНГОВИЙ ТОНІК tolpa.</strong></li></h2><li class ="price">🔥298 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Мікропілінговий тонік-есенція для обличчя', price:'298'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear12.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+    ❗️Гідрофільна олійка для вмивання
+    <li>Особливо потрібна тим, хто користується плотними тоналками, СПФ-кремами з високим ступенем захисту</li>
+    <li>195 мл</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ГІДРОФІЛЬНА ОЛІЯ tolpa.</strong></li></h2><li class ="price">🔥282 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Гідрофільна олійка для вмивання', price:'282'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/clear13.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+        ❗️Пілінг ензимний для обличчя
+        Відгуки просто 😍
+        <li>Шкіра: комбінована, жирна та схильна до вугрів, недосконалості, чутлива, схильна до алергії.</li>
+        <li>✅ інтенсивно відлущує
+        ✅ зменшує виділення шкірного сала
+        ✅ зменшує кількість чорних крапок
+        ✅ усуває недоліки</li>
+    <li>Використовувати двічі на тиждень
+    Почервоніння і пощіпування під час використання - норма.</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>ПІЛІНГ ЕНЗИМНИЙ ДЛЯ ОБЛИЧЧЯ tolpa.</strong></li></h2><li class ="price">🔥323 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Пілінг ензимний для обличчя tolpa.', price:'323'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear14.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+    ❗️Гіалуронова міцелярна рідина
+    <li>Великий об'єм: 400 мл</li>
+    <li>-ефективно та делікатно знімає мейк, зволожує, не пошкоджує рН і фізіологію шкіри
+    </li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ГІАЛУРОНОВА МІЦЕЛЯРНА РІДИНА tolpa.</strong></li></h2><li class ="price">🔥310 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Гіалуронова міцелярна рідина tolpa.', price:'310'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear15.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+    ❗️ з 2% кислотами  AHA + LHA
+    <li>З серії нашою улюбленої лінійки))
+    Економічна, ніжна.
+    НЕ видаляє макіяж, ідеально підійде для ранішнього вмивання </li>
+    <li>150 мл</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ПІНКА ДО ВМИВАННЯ tolpa.</strong></li></h2><li class ="price">🔥320 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Пінка до вмивання tolpa.', price:'320'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/clear16.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+        ❗️ПІЛІНГ з трьома кислотами по класній ціні 😍
+        [15%: AHA+LHA+PHA ]
+        (молочна, саліцилова, полігідроксикислота: глюконолактон)
+        <li>❗️Дуже класна річ, АЛЕ! Раджу спробувати тим, хто вже мав справу із кислотами. Якщо ви взагалі ніколи не використовували кислоти, слід розпочати з інших видів продуктів.</li>
+        <li>❗️При першому використанні тримати на обличчі не довше 3 хв.</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>ПІЛІНГ З ТРЬОМА КИСЛОТАМИ ПО tolpa.</strong></li></h2><li class ="price">🔥 410 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'ПІЛІНГ з трьома кислотами', price:'410'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear17.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+    ❗️Тонік з 5% AHA + LHA кислотами
+    (молочна та саліцилова)
+    <li>А також у складі центелла та гель алое.
+    Тонізує і має антибактеріальні властивості.
+    Ідеально підійде для жирної шкіри, що схильна до висипань та запалень</li>
+    <li>200 мл</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ТОНІК tolpa.</strong></li></h2><li class ="price">🔥340 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Тонік tolpa.', price:'340'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/clear18.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️Знахідка для жирної/комбінованої/схильної до висипань шкіри! 
+    Користуюся нею зранку завжди. Ідеально прибирає весь себум, який накопився на шкірі за ніч. Гарно підсушує висипання.
+    Також ідеально підійде для підлітків (15+)
+    <li>❗️Гель для вмивання з AHA + LHA кислотами (молочна та саліцилова)
+    175 мл</li>
+    <li>❗️шкіра: чутлива, алергічна, змішана, жирна, запущені акне, активні зміни</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ГЕЛЬ ДЛЯ ВМИВАННЯ tolpa.</strong></li></h2><li class ="price">🔥289 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Гель для вмивання tolpa.', price:'289'})">Додати у кошик</button>
+</div>
+</div>
+<div id="nameEyes">
+    <h3>
+        Для очей
+    </h3>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/eye.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <img src="img/eye1.jpg" id="eye">
+                        <li>❗️Роликовий крем під очі</li> 
+        <li>20 мл</li>
+        <li>З пептидним комплексом та гіалуроновою кислотою.</li>
+        <li>Металеві ролики масажують та охолоджують шкіру під очима, прискорюючи кровообіг та прибираючи набряк.
+        Вік 20+</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>РОЛИКОВИЙ КРЕМ ПІД ОЧІ NaNi Beauty</strong></li></h2><li class ="price">🔥 210 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'❗️Роликовий крем під очі NaNi Beauty', price:'210'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/eye2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    ❗️Крем ПІД ОЧІ з гіалуронкою
+    <li>Максимальне зволоження і утримання вологи шкіри навколо очей.
+        Усуває дрібні зморшки, які називаються паперовими і виникають через втрату вологи.
+        Це дуже крута лінійка, ви знаєте по вв крему))</li>
+    <li>15 мл</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>КРЕМ ПІД ОЧІ З ГІАЛУРОНКОЮ</strong></li></h2><li class ="price">🔥328 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'❗️Крем ПІД ОЧІ з гіалуронкою', price:'328'})">Додати у кошик</button>
+</div>
+</div>
+<div id="nameHair">
+    <h3>
+        Для волосся
+    </h3>
+</div>
+    <div class="allCategory">
+        <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/hair.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+            ❗️Шампунь-гель для душу ДЛЯ ЧОЛОВІКІВ 2-в-1
+            <li>200 мл</li></p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>ШАМПУНЬ ГЕЛЬ ДЛЯ ДУШУ ДЛЯ ЧОЛОВІКІВ tolpa.</strong></li></h2><li class ="price">🔥 134 грн</li>
+    <button class="button-35" role="button" onclick="addToCart({name:'Шампунь-гель для душу ДЛЯ ЧОЛОВІКІВ 2-в-1', price:'134'})">Додати у кошик</button>
+    </div>
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/hair1.jpg">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        ✔️Шампунь 200 мл 
+        <li>✔️Маска 200 мл (наноситься на шкіру голови і на довжину)</li>
+        <li>✔️Сироватка 50 мл (втирається у шкіру голови)</li>
+    <li>✔️Сироватка 50 мл (втирається у шкіру голови)</li>
+    <li>Засоби цієї лінії призначені для людей з тонким волоссям, яке періодично або хронічно випадає, а також для людей з чутливою шкірою голови та проблемами випадіння волосся.
+        Виробник Польща, OCEANIC</li></p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>НАБІР ВІД BIOVAX Trychologic ВІД ВИПАДІННЯ ВОЛОССЯ</strong></li></h2><li class ="price">🔥 792 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'Набір від BIOVAX Trychologic проти випадіння волосся', price:'792'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/hair2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+    ❗️Пілінг ЕНЗИМНИЙ для ШКІРИ ГОЛОВИ
+    <li>100 мл</li>
+    <li>Відгуки 👍</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ПІЛІНГ ЕНЗИМНИЙ ДЛЯ ШКІРИ ГОЛОВИ</strong></li></h2><li class ="price">🔥298 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name:'', price:''})">Додати у кошик</button>
+</div>
+    </div>
+    <div class="allCategory">
+        <div class="category">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/hair3.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="pCategory">
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+                            <li>ㅤ</li>
+            ❗️Скраб-пілінг для шкіри голови
+            180 мл.
+            <li>Гарно очищує, регулює роботу сальних залоз та стимулює ріст волосся </li>
+            <li>У складі екстракт імбиру, чайного дерева, розмарину, кипарису, скрабуючі частички, пантенол, гудролізований кератин та біотин.</li></p>
+                    </div>
+                </div>
+            </div>
+            <h2><li class="liCategory"; class="aCategory"><strong>СКРАБ-ПІЛІНГ ДЛЯ ГОЛОВИ NaNi Beauty</strong></li></h2><li class ="price">🔥 220 грн</li>
+    <button class="button-35" role="button" onclick="addToCart({name:'СКРАБ-ПІЛІНГ ДЛЯ ГОЛОВИ NaNi Beauty', price:'220'})">Додати у кошик</button>
+    </div>
+    </div>
+<div id="nameTextile">
+    <h2>
+        Текстиль
+    </h2>
+</div>
+<div id="nameBilyzna">
+        <h3>
+            Білизна
+        </h3>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/termo.png">
+                </div>
+                <div class="flip-card-back">
+                    <p id="pCategory">
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                        <li>ㅤ</li>
+                     <li>  Дуже класна та якісна, торік брали дуже багато.
+Репліка на Columbia</li> 
+        <li>Чоловічі та Жіночі комплекти</li>
+        <li>Чоловічі від С до ХХХЛ</li>
+        <li>Жіночі від С до ХХЛ</li>
+        <li>Кольори: чорний</li>
+        <li>Орієнтуємося на розмірну сітку нижче</li>
+        
+                </p>
+                </div>
+            </div>
+        </div>
+        <h2><li class="liCategory"; class="aCategory"><strong>ТЕРМОБІЛИЗНА</strong></li></h2><li class="price">🔥680 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Термобілизна', price: '680'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/termo1.png">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    Таке саме, як доросле по якості
+    <li>Ціну дають дуже класну 🔥</li>
+    
+    <li>Розміри:
+        128,
+        134,
+        140,
+        146,
+        152,
+        158</li></p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"; class="aCategory"><strong>ДИТЯЧА ТЕРМОБІЛИЗНА</strong></li></h2><li class="price">🔥 565 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Дитяча термобілизна', price: '565'})">Додати у кошик</button>
+</div>
+<div class="category">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/termo2.jpg">
+            </div>
+            <div class="flip-card-back">
+                <p id="pCategory">
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    <li>ㅤ</li>
+                    Класна турецька якість
+    <li>👉 Без горловини</li>
+    <li>Фірма OZKAN.
+        Дуже зручний, теплий та приємний до тіла</li>
+    <li>S, M, L, XL.
+        Розміри ПОВНОМІРНІ</li>
+    </p>
+            </div>
+        </div>
+    </div>
+    <h2><li class="liCategory"><strong>ТЕРМО БОДІ</strong></li></h2><li class="price">🔥417 грн</li>
+<button class="button-35" role="button" onclick="addToCart({name: 'Термо боді', price: '417'})">Додати у кошик</button>
+</div>
+</div>
+<div class="allCategory">
+    <div class="category">
+        <img src="img/table.jpg" id="table">
+        <h2><li class="liCategory"><strong>РОЗМІРНА СІТКА</strong></li></h2>
+    </div>
+    <div class="category">
+        <img src="img/table1.jpg" id="table1">
+        <h2><li class="liCategory"><strong>ТАБЛИЦЯ ДЛЯ ЧОЛОВІКІВ ТА ЖІНОК</strong></li></h2>
+    </div>
+</div>
+    <footer>
+       <li><p id="pFooter"><strong>ЗВОРОТНІЙ ЗВ'ЯЗОК</strong></p></li>
+       <div id="dFooter"> <li><a href="https://t.me/sppolsha" target="_blank"><button class="button-48" role="button"><span class="text"><img src="img/tg.png" class="tg">Спільнота</span></button></a></li>
+        <li><a href="https://t.me/Menestrelija" target="_blank"><button class="button-48" role="button"><span class="text"><img src="img/tg.png" class="tg">Особисті</span></button></a></li>
+    </div>
+    </footer>
+    </main>
+</body>
+</html>
